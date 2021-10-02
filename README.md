@@ -8,13 +8,17 @@ The bot doesn't give random problems on same command, i.e, a problem cannot be s
 ## Functionality
 The bot currently supports following commands:
 - `-help`
+
 ![i1](https://i.imgur.com/x5jRGzJ.png) 
 
 - `-gimme`
+
 ![i2](https://i.imgur.com/m7AQkNM.png) 
 
 - `-gimme <handle> <rating>`
+
 ![i3](https://i.imgur.com/7VEwLPI.png) 
 
 - `-gimme <handle> <min_rating> <max_rating>`
+
 ![i4](https://i.imgur.com/zEZke3K.png) 
