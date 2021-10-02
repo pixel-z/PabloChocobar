@@ -71,7 +71,7 @@ def search(total_problems, problems_finished):
         return name, link, progress
     else:
         print("\nAll problems from this range have been completed!\n")
-        return None
+        return None, None, None # condition when all problems done in the range
 
 def get_problems(h, min, max):
     global handle, min_rating, max_rating
@@ -129,8 +129,10 @@ async def on_message(message):
         name, link, progress = await process_msg(message.content)
         # await message.channel.send('I read ' + message.content)
         
+        if name == None and link == None and progress == None:
+            await message.channel.send("```All the problems in the specified range completed.```")
         # Error condition
-        if name == link and link == progress:
+        elif name == link and link == progress:
             await message.channel.send("```Usage: -gimme <handle> <rating>\nUsage: -gimme <handle> <min_rating> <max_rating>```")
         else:
             ret = name+'\n'+progress+link
