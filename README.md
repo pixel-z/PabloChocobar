@@ -1,5 +1,5 @@
 # PabloChocobar
-Discord bot that suggests unsolved problems from Educational Codeforces rounds & ICPC mirror rounds.
+This is a Discord bot that suggests unsolved problems from Educational Codeforces rounds & ICPC mirror rounds.
 
 The bot gives the `problem name`, `solved problems/total problems` in the specified range and the `problem link`.
 
